@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mburu Karimi | Mburu Karimi</title>
+<meta name="description" content="Mburu Karimi — U-M Ford School of Public Policy. Consulting, strategy, and analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">Mburu Karimi<span class="dot">.</span></a>
+  <div class="nav-right">
+    <ul id="navMenu">
+      <li><a href="index.html" style="color:var(--navy)">Home</a></li>
+      <li><a href="projects.html">Projects &amp; Experience</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="personal.html">Personal</a></li>
+      <li><a href="resume.html">Résumé &amp; Skills</a></li>
+    </ul>
+    <div class="contact-mini">
+      <a href="mailto:mburu@umich.edu">Email</a>
+      <a href="https://www.linkedin.com/in/mburu-karimi/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mburukarimi" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-portrait reveal">
+      <img src="images/headshot-main.jpg" alt="Mburu Karimi">
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Public Policy · Strategy · Consulting</div>
+      <h1>Mburu <em>Karimi</em></h1>
+      <p class="lede">Incoming junior at the University of Michigan's Gerald R. Ford School of Public Policy — the #5 public policy school in the country — studying Public Policy with a concentration in Economics, Strategy &amp; Technology and a minor in Statistics &amp; Economics.</p>
+      <p class="lede" style="margin-top:1rem;">Metro Detroit born, Kenyan-American, and drawn to problem-solving at the intersection of policy, technology, strategy, and law. Recruiting for roles in management &amp; strategy consulting, corporate strategy, and data analysis — with a long-term goal of law.</p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn">Projects &amp; Experience</a>
+        <a href="resume.html" class="btn gold">Résumé &amp; Skills</a>
+      </div>
+      <div class="hero-tags">
+        <span>Consulting</span><span>Corporate Strategy</span><span>Data Analysis</span><span>Economic Consulting</span><span>Law-bound</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-label reveal"><span class="idx">·</span><h2>Quick hits</h2></div>
+    <div class="facts reveal">
+      <div class="f"><div class="n">'28</div><div class="l">U-M Ford School of Public Policy</div></div>
+      <div class="f"><div class="n">#5</div><div class="l">Ranked public policy school (top-20 university)</div></div>
+      <div class="f"><div class="n">5</div><div class="l">Consulting engagements &amp; an equity pitch</div></div>
+      <div class="f"><div class="n">3</div><div class="l">Leadership boards · 2 orgs co-founded</div></div>
+    </div>
+    <div class="quote-card reveal" style="margin-top:2.6rem;max-width:640px;">
+      "Try to be a rainbow in someone's cloud."
+      <cite>— Maya Angelou</cite>
+    </div>
+    <div class="contact-links reveal" style="margin-top:2.4rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+      <a class="btn" href="mailto:mburu@umich.edu">Email</a>
+      <a class="btn" href="tel:+12483129650">(248) 312-9650</a>
+      <a class="btn" href="https://www.linkedin.com/in/mburu-karimi/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/mburukarimi" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">Mburu Karimi · Metro Detroit → Ann Arbor · mburu@umich.edu · (248) 312-9650</footer>
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+  const t=document.getElementById('navToggle'), m=document.getElementById('navMenu');
+  if(t){ t.addEventListener('click',()=>m.classList.toggle('open')); }
+  document.querySelectorAll('.xcard-head').forEach(h=>h.addEventListener('click',()=>h.parentElement.classList.toggle('open')));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

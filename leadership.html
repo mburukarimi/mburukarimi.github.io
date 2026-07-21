@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership | Mburu Karimi</title>
+<meta name="description" content="Mburu Karimi's leadership and campus involvement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">Mburu Karimi<span class="dot">.</span></a>
+  <div class="nav-right">
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects &amp; Experience</a></li>
+      <li><a href="leadership.html" style="color:var(--navy)">Leadership</a></li>
+      <li><a href="personal.html">Personal</a></li>
+      <li><a href="resume.html">Résumé &amp; Skills</a></li>
+    </ul>
+    <div class="contact-mini">
+      <a href="mailto:mburu@umich.edu">Email</a>
+      <a href="https://www.linkedin.com/in/mburu-karimi/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mburukarimi" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+</header>
+
+<div class="page-hero reveal">
+  <div class="eyebrow">Leadership &amp; Involvement</div>
+  <h1>Building things &amp; leading people</h1>
+  <p>From co-founding organizations to serving on executive boards, leadership has been the throughline of my time at Michigan.</p>
+</div>
+<section style="padding-top:1rem;">
+  <div class="wrap">
+    <div class="tl">
+      <div class="tl-item reveal">
+      <div class="when">CURRENT</div>
+      <h3>Kappa Omega Alpha (KOA)</h3>
+      <div class="role">Vice President, Internal · Executive Board</div>
+      <p>Plan professional treks and internal operations for the pre-professional fraternity, and created the UMLC legal case competition and conference from the ground up.</p><div class="tl-photos"><img src="images/koa-trek-cornerstone.jpg" alt="KOA trek"><img src="images/koa-board.jpg" alt="KOA board"><img src="images/koa-puerto-rico-2024.jpg" alt="KOA trip"></div>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">2024 – 2025</div>
+      <h3>East African Students Association (EASA)</h3>
+      <div class="role">President &amp; Co-Founder</div>
+      <p>Co-founded EASA to give students of East African descent a space to thrive — planning events, booking spaces, and partnering with the university on cultural collaborations across other organizations.</p><div class="tl-photos"><img src="images/easa-founding-board-2024.jpg" alt="EASA founding board"><img src="images/easa-board.jpg" alt="EASA board"><img src="images/easa-founding-trio.jpg" alt="EASA co-founders"></div>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">2024 – PRESENT</div>
+      <h3>Michigan Business Law</h3>
+      <div class="role">Research Associate &amp; DEI Chair · Executive Board</div>
+      <p>Contribute to the research showcase and lead DEI initiatives while serving on the executive board.</p><div class="tl-photos"><img src="images/mbl-exec-board-2025.jpg" alt="MBL exec board"><img src="images/mbl-research-team-2024.jpg" alt="MBL research team"></div>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>Model United Nations at UM (MUNUM)</h3>
+      <div class="role">Member</div>
+      <p>Compete and staff conferences through the University of Michigan's Model UN organization, sharpening research, negotiation, and public-speaking skills.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">SUMMER 2026</div>
+      <h3>Public Service Internship Program (PSIP) — DC Cohort</h3>
+      <div class="role">Selected Participant</div>
+      <p>Selected for the University of Michigan's competitive PSIP DC cohort, a program placing students in public-service internships in Washington, D.C. with funding and structured professional development.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>Michigan Pre-Law Society</h3>
+      <div class="role">Member</div>
+      <p>Active in the pre-law community at Michigan, engaging with law-school preparation, speakers, and networking as I work toward a future in law.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>SIBS — Support for Incoming Black Students</h3>
+      <div class="role">Mentor</div>
+      <p>Mentor incoming Black students at Michigan — one of the roles I'm most proud of, helping new students find their footing and community on campus.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>Maize &amp; Blue Cupboard</h3>
+      <div class="role">Volunteer</div>
+      <p>Volunteer with the university's food-security resource, plus soup kitchens across Detroit.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">Mburu Karimi · Metro Detroit → Ann Arbor · mburu@umich.edu · (248) 312-9650</footer>
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+  const t=document.getElementById('navToggle'), m=document.getElementById('navMenu');
+  if(t){ t.addEventListener('click',()=>m.classList.toggle('open')); }
+  document.querySelectorAll('.xcard-head').forEach(h=>h.addEventListener('click',()=>h.parentElement.classList.toggle('open')));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
