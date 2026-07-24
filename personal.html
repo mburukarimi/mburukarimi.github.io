@@ -1,79 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal | Mburu Karimi</title>
-<meta name="description" content="Mburu Karimi — interests, heritage, and life beyond work.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal &middot; Mburu Karimi</title>
+<meta name="description" content="Sports, music, film, and everything else outside the resume.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Newsreader:ital,wght@0,300;0,400;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="nav" id="nav">
-  <a href="index.html" class="brand">Mburu Karimi<span class="dot">.</span></a>
-  <div class="nav-right">
-    <ul id="navMenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects &amp; Experience</a></li>
-      <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="personal.html" style="color:var(--navy)">Personal</a></li>
-      <li><a href="resume.html">Résumé &amp; Skills</a></li>
-    </ul>
-    <div class="contact-mini">
-      <a href="mailto:mburu@umich.edu">Email</a>
-      <a href="https://www.linkedin.com/in/mburu-karimi/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/mburukarimi" target="_blank" rel="noopener">GitHub</a>
+
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Mburu Karimi.</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <span class="nav-pill" id="navPill" aria-hidden="true"></span>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="leadership.html">Leadership</a>
+      <a class="nav-link" href="personal.html" aria-current="page">Personal</a>
+      <a class="nav-link" href="resume.html">Resume</a>
+    </nav>
+    <div class="header-tools">
+      <a class="icon-btn" href="mailto:mburu@umich.edu" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
+        <span class="tip">mburu@umich.edu</span>
+      </a>
+      <button class="icon-btn" id="phoneBtn" type="button" aria-label="Copy phone number">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
+        <span class="tip" id="phoneTip">(248) 312-9650</span>
+      </button>
+      <a class="icon-btn" href="https://linkedin.com/in/mburu-karimi" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.4 18H6V9.6h2.4Zm-1.2-9.6a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8ZM18 18h-2.4v-4.2c0-1-.4-1.7-1.3-1.7a1.4 1.4 0 0 0-1.3 1 1.8 1.8 0 0 0-.1.6V18h-2.4V9.6h2.4v1.1a2.5 2.5 0 0 1 2.2-1.2c1.6 0 2.9 1 2.9 3.3Z"/></svg>
+        <span class="tip">linkedin.com/in/mburu-karimi</span>
+      </a>
+      <a class="icon-btn" href="https://github.com/mburukarimi" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+        <span class="tip">github.com/mburukarimi</span>
+      </a>
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+        <svg class="sun" viewBox="0 0 24 24"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13a1 1 0 0 1-1-1V2a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1Zm0 18a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1ZM4 13H3a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2Zm17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2ZM5.6 6.6a1 1 0 0 1-.7-.3l-.7-.7a1 1 0 0 1 1.4-1.4l.7.7a1 1 0 0 1-.7 1.7Zm12.8 12.8a1 1 0 0 1-.7-.3l-.7-.7a1 1 0 0 1 1.4-1.4l.7.7a1 1 0 0 1-.7 1.7ZM18.4 6.6a1 1 0 0 1-.7-1.7l.7-.7a1 1 0 1 1 1.4 1.4l-.7.7a1 1 0 0 1-.7.3ZM5.6 19.4a1 1 0 0 1-.7-1.7l.7-.7a1 1 0 0 1 1.4 1.4l-.7.7a1 1 0 0 1-.7.3Z"/></svg>
+        <svg class="moon" viewBox="0 0 24 24"><path d="M21 13a9 9 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
     </div>
   </div>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
 </header>
 
-<div class="page-hero reveal">
-  <div class="eyebrow">Personal</div>
-  <h1>Beyond the résumé</h1>
-  <p>The stuff that actually makes me me — where I'm from, what I'm into, and what I'd happily talk your ear off about.</p>
-</div>
-<section style="padding-top:1rem;">
-  <div class="wrap">
-    <div class="personal-grid reveal">
-      <div class="int-card"><h4>Where I'm from</h4><p>Born and raised in Metro Detroit — Southfield, then Troy. My parents and extended family are from <strong>Kenya</strong>, and my Kenyan-American identity runs through everything I do.</p></div>
-      <div class="int-card"><h4>Heritage</h4><p>Proud Kenyan-American. I co-founded the East African Students Association, cook Kenyan food I taught myself in college, and I'm currently teaching myself <strong>Kikuyu</strong>, my native tribal language.</p></div>
-      <div class="int-card"><h4>On the court &amp; pitch</h4><p>Pass-first point guard (<strong>Chris Paul</strong> is the blueprint) and a defensive mid in futsal (<strong>Sergio Busquets</strong> fan). Intramural basketball champion, Spring 2026.</p></div>
-      <div class="int-card"><h4>Teams I live and die by</h4><p>Die-hard <strong>Detroit Pistons</strong> and <strong>Lions</strong> fan, and I back <strong>Arsenal</strong> in the Premier League.</p></div>
-      <div class="int-card"><h4>Music</h4><p>Building a vinyl collection (~35 records and counting) and I do some light <strong>DJing</strong> — mostly afrobeats, hip-hop, and R&amp;B. I've also got a Topster's worth of albums I'll defend.</p></div>
-      <div class="int-card"><h4>Film</h4><p>Sucker for psychological thrillers and sci-fi: <strong>Arrival</strong>, <strong>Parasite</strong>, <strong>Interstellar</strong>, <strong>Prisoners</strong>, <strong>Oldboy</strong>, <strong>The Prestige</strong>, <strong>No Country for Old Men</strong>. The list is long.</p></div>
-      <div class="int-card"><h4>Reading</h4><p>Every <strong>Malcolm Gladwell</strong> book — especially <strong>Outliers</strong>, <strong>David and Goliath</strong>, and <strong>The Tipping Point</strong>.</p></div>
-      <div class="int-card"><h4>Off the clock</h4><p>Thrifting most of my closet from Salvation Army, Goodwill, and local spots. I also write down my dreams, and I always loop one song on repeat while I work.</p></div>
-      <div class="int-card"><h4>Currently</h4><p>Teaching myself Kikuyu and building data-science side projects around sports statistics.</p></div>
-      <div class="int-card"><h4>Causes I care about</h4><p>Education policy, ESG, childcare access, accessible healthcare, urban development, and racial justice.</p></div>
+<main>
+
+<section class="shell page-head">
+  <p class="eyebrow">Sports &middot; Music &middot; Film &middot; Everything else</p>
+  <h1 class="page-title">Personal</h1>
+  <p class="page-sub">What I do when I am not in a meeting or writing a memo.</p>
+</section>
+
+<hr class="rule-line">
+
+<!-- ==================== SPORTS ==================== -->
+<section class="shell section">
+  <div class="section-head"><span class="label">Sports</span><span class="line"></span></div>
+
+  <div class="split">
+    <div>
+      <h3>What I play</h3>
+      <p>I play futsal and pickup soccer as a defensive midfielder. Sergio Busquets is the player I study most: positioning, reading the game two passes ahead, making the team function without ever needing the spotlight. On the basketball court I am a pass-first point guard in the Chris Paul mold. My intramural team won the championship in Spring 2026.</p>
+      <div class="photo-strip">
+        <figure>
+          <img src="images/intramural-basketball-champs-2026.jpg" alt="Intramural basketball champions" loading="lazy" onerror="this.closest('figure').style.display='none'">
+          <figcaption>Intramural champions, Spring 2026</figcaption>
+        </figure>
+      </div>
     </div>
 
-    <div class="section-label reveal" style="margin-top:4rem;"><span class="idx">·</span><h2>In photos</h2></div>
-    <div class="gallery reveal">
-      <figure><img src="images/kenya-safari-2024.jpg" alt="Safari in Kenya"><figcaption>Safari in Kenya · 2024</figcaption></figure>
-      <figure><img src="images/koa-puerto-rico-2024.jpg" alt="Puerto Rico"><figcaption>KOA · Puerto Rico</figcaption></figure>
-      <figure><img src="images/intramural-basketball-champs-2026.jpg" alt="Intramural champions"><figcaption>Intramural basketball champions · 2026</figcaption></figure>
-      <figure><img src="images/umich-football-2024.jpg" alt="Michigan football"><figcaption>The Big House · Fall 2024</figcaption></figure>
-      <figure><img src="images/toronto-2025.jpg" alt="Toronto"><figcaption>Toronto · Winter 2025</figcaption></figure>
-      <figure><img src="images/banff-2024.jpg" alt="Banff"><figcaption>Banff National Park · 2024</figcaption></figure>
-      <figure><img src="images/tahquamenon-falls-2025.jpg" alt="Tahquamenon Falls"><figcaption>Tahquamenon Falls, U.P. · 2025</figcaption></figure>
-      <figure><img src="images/arizona-dad-2022.jpg" alt="Arizona with dad"><figcaption>Arizona, with my dad · 2022</figcaption></figure>
-      <figure><img src="images/puerto-rico-friends-2026.jpg" alt="Puerto Rico with friends"><figcaption>Puerto Rico with friends · 2026</figcaption></figure>
+    <div>
+      <h3>What I watch</h3>
+      <p>Die-hard Detroit Pistons and Lions fan, which builds a specific kind of character. I back Arsenal in the Premier League. And I am at every Michigan home game I can get to.</p>
+      <div class="photo-strip">
+        <figure>
+          <img src="images/umich-football-2024.jpg" alt="Michigan football" loading="lazy" onerror="this.closest('figure').style.display='none'">
+          <figcaption>The Big House</figcaption>
+        </figure>
+        <figure>
+          <img src="images/umich-bball-championship-2026.jpg" alt="Michigan basketball" loading="lazy" onerror="this.closest('figure').style.display='none'">
+          <figcaption>Crisler Center</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
 
-<footer class="site-foot">Mburu Karimi · Metro Detroit → Ann Arbor · mburu@umich.edu · (248) 312-9650</footer>
-<script>
-  const nav=document.getElementById('nav');
-  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
-  const t=document.getElementById('navToggle'), m=document.getElementById('navMenu');
-  if(t){ t.addEventListener('click',()=>m.classList.toggle('open')); }
-  document.querySelectorAll('.xcard-head').forEach(h=>h.addEventListener('click',()=>h.parentElement.classList.toggle('open')));
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:0.1});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
+<hr class="rule-line">
+
+<!-- ==================== MEDIA ==================== -->
+<section class="shell section">
+  <div class="section-head"><span class="label">Media</span><span class="line"></span></div>
+
+  <!-- Music -->
+  <div class="media-block">
+    <h3>What I am listening to</h3>
+    <p>Afrobeats, hip-hop, and R&amp;B, mostly. I have about 35 records and I DJ a little. Below is my topster, which is the closest thing I have to a permanent record of my taste.</p>
+
+    <figure class="topster">
+      <img src="images/topster.png" alt="Grid of favorite album covers" loading="lazy">
+    </figure>
+
+    <a class="linkout linkout-spotify" href="https://open.spotify.com/user/wambui_karimi?si=2f0ff98127fb48e3" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 14.4a.62.62 0 0 1-.86.21c-2.35-1.44-5.3-1.76-8.79-.96a.62.62 0 1 1-.28-1.22c3.81-.87 7.08-.5 9.72 1.11.3.18.39.57.21.86Zm1.23-2.74a.78.78 0 0 1-1.07.26c-2.69-1.66-6.79-2.14-9.97-1.17a.78.78 0 1 1-.45-1.49c3.63-1.1 8.15-.57 11.24 1.33.36.22.48.7.25 1.07Zm.1-2.85c-3.23-1.92-8.55-2.1-11.63-1.16a.93.93 0 1 1-.54-1.79c3.54-1.07 9.42-.87 13.13 1.34a.93.93 0 1 1-.96 1.6Z"/></svg>
+      Open my Spotify
+    </a>
+  </div>
+
+  <!-- Film -->
+  <div class="media-block">
+    <h3>What I am watching</h3>
+    <p>Psychological thrillers and science fiction, mostly things worth arguing about after the credits. Arrival, Parasite, Prisoners, Oldboy, The Prestige, Blade Runner 2049. I log everything on Letterboxd.</p>
+
+    <a class="linkout linkout-letterboxd" href="https://letterboxd.com/mburuu/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="4.4"/><circle cx="12" cy="12" r="4.4"/><circle cx="18" cy="12" r="4.4"/></svg>
+      Open my Letterboxd
+    </a>
+  </div>
+
+  <!-- Reading -->
+  <div class="media-block">
+    <h3>What I am reading</h3>
+    <p>Malcolm Gladwell is the author I keep coming back to, especially Outliers, David and Goliath, and The Tipping Point. Beyond him I read at the intersection of policy, economics, and society, which is a long way of saying I like books that explain why systems behave the way they do.</p>
+  </div>
+</section>
+
+<hr class="rule-line">
+
+<!-- ==================== MORE ==================== -->
+<section class="shell section">
+  <div class="section-head"><span class="label">More</span><span class="line"></span></div>
+
+  <div class="more-grid">
+    <div class="more-card">
+      <h4>Heritage</h4>
+      <p>Kenyan-American, raised in Metro Detroit by parents from Kenya. I am teaching myself Kikuyu, my family's language. Co-founding EASA was partly about building the community I wanted to find when I got here.</p>
+    </div>
+    <div class="more-card">
+      <h4>Thrifting</h4>
+      <p>Most of my closet comes from Salvation Army, Goodwill, and local thrift spots. Better for the budget, and it turns up more interesting pieces than buying new ever has.</p>
+    </div>
+    <div class="more-card">
+      <h4>Causes</h4>
+      <p>Education policy, ESG, accessible healthcare, urban development, childcare access, and racial justice. These are the issues I want my career to actually connect to, not just reference.</p>
+    </div>
+    <div class="more-card">
+      <h4>Quirks</h4>
+      <p>I write down every dream I remember. I listen to one song on repeat while working, the same song, for hours. I play the NYT games and sports trivia daily.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule-line">
+
+<!-- ==================== PHOTOS ==================== -->
+<section class="shell section" style="padding-bottom:4.5rem">
+  <div class="section-head"><span class="label">In Photos</span><span class="line"></span></div>
+  <p class="group-note" style="margin-top:-1.25rem">Masai Mara, Kenya is my favorite trip I have taken.</p>
+
+  <div class="gallery">
+    <figure class="hero">
+      <img src="images/personal/kenya/kenya-lion-cubs.jpg" alt="Lion cubs in the Masai Mara" loading="lazy">
+      <figcaption>Masai Mara, Kenya</figcaption>
+    </figure>
+    <figure class="tall">
+      <img src="images/personal/kenya/kenya-rooftop.jpg" alt="On the roof of a safari vehicle" loading="lazy">
+      <figcaption>Masai Mara, Kenya</figcaption>
+    </figure>
+    <figure>
+      <img src="images/personal/kenya/kenya-giraffe.jpg" alt="Giraffe on the plains" loading="lazy">
+      <figcaption>Masai Mara, Kenya</figcaption>
+    </figure>
+    <figure>
+      <img src="images/personal/kenya/kenya-safari-window.jpg" alt="Lion seen from the vehicle" loading="lazy">
+      <figcaption>Masai Mara, Kenya</figcaption>
+    </figure>
+    <figure class="tall">
+      <img src="images/personal/kenya/kenya-elephant.jpg" alt="Elephant seen through binoculars" loading="lazy">
+      <figcaption>Through the binoculars</figcaption>
+    </figure>
+    <figure>
+      <img src="images/personal/kenya/kenya-vehicles.jpg" alt="Safari vehicles" loading="lazy">
+      <figcaption>Before the drive out</figcaption>
+    </figure>
+
+    <!-- Add your existing photos back here. Example format:
+    <figure class="wide">
+      <img src="images/puerto-rico-friends.jpg" alt="Puerto Rico with friends" loading="lazy">
+      <figcaption>Puerto Rico with friends (2026)</figcaption>
+    </figure>
+    <figure>
+      <img src="images/nairobi-dad.jpg" alt="Nairobi with my dad" loading="lazy">
+      <figcaption>Nairobi, Kenya with my dad (2021)</figcaption>
+    </figure>
+    -->
+
+    <figure class="wide">
+      <img src="images/personal/easa-candid-arch.jpg" alt="EASA board on campus" loading="lazy">
+      <figcaption>Ann Arbor, Michigan</figcaption>
+    </figure>
+    <figure>
+      <img src="images/personal/pwc-disney.jpg" alt="PwC Career Preview group at Disney" loading="lazy">
+      <figcaption>Orlando, Florida (2025)</figcaption>
+    </figure>
+    <figure>
+      <img src="images/work/meg/meg-chicago-street.jpg" alt="Consulting trek in Chicago" loading="lazy">
+      <figcaption>Chicago, Illinois</figcaption>
+    </figure>
+    <figure class="tall">
+      <img src="images/portrait/portrait-casual-arch.jpg" alt="On campus at the Michigan arch" loading="lazy">
+      <figcaption>Ann Arbor, Michigan</figcaption>
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">Mburu Karimi</div>
+      <div class="footer-sub">Ford School of Public Policy &middot; Class of 2028</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-icons">
+        <a class="icon-btn" href="mailto:mburu@umich.edu" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg></a>
+        <a class="icon-btn" href="tel:+12483129650" aria-label="Phone"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg></a>
+        <a class="icon-btn" href="https://linkedin.com/in/mburu-karimi" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.4 18H6V9.6h2.4Zm-1.2-9.6a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8ZM18 18h-2.4v-4.2c0-1-.4-1.7-1.3-1.7a1.4 1.4 0 0 0-1.3 1 1.8 1.8 0 0 0-.1.6V18h-2.4V9.6h2.4v1.1a2.5 2.5 0 0 1 2.2-1.2c1.6 0 2.9 1 2.9 3.3Z"/></svg></a>
+        <a class="icon-btn" href="https://github.com/mburukarimi" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Mburu Karimi</div>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
 </html>
