@@ -1,190 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leadership &middot; Mburu Karimi</title>
-<meta name="description" content="Leadership and involvement across campus organizations at the University of Michigan.">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership | Mburu Karimi</title>
+<meta name="description" content="Mburu Karimi's leadership and campus involvement.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Newsreader:ital,wght@0,300;0,400;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<div class="cursor-ring" aria-hidden="true"></div>
-<div class="cursor-dot" aria-hidden="true"></div>
-
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="index.html">Mburu Karimi.</a>
-    <nav class="nav" id="nav" aria-label="Main">
-      <span class="nav-pill" id="navPill" aria-hidden="true"></span>
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="projects.html">Projects</a>
-      <a class="nav-link" href="leadership.html" aria-current="page">Leadership</a>
-      <a class="nav-link" href="personal.html">Personal</a>
-      <a class="nav-link" href="resume.html">Resume</a>
-    </nav>
-    <div class="header-tools">
-      <a class="icon-btn" href="mailto:mburu@umich.edu" aria-label="Email">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
-        <span class="tip">mburu@umich.edu</span>
-      </a>
-      <button class="icon-btn" id="phoneBtn" type="button" aria-label="Copy phone number">
-        <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
-        <span class="tip" id="phoneTip">(248) 312-9650</span>
-      </button>
-      <a class="icon-btn" href="https://linkedin.com/in/mburu-karimi" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.4 18H6V9.6h2.4Zm-1.2-9.6a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8ZM18 18h-2.4v-4.2c0-1-.4-1.7-1.3-1.7a1.4 1.4 0 0 0-1.3 1 1.8 1.8 0 0 0-.1.6V18h-2.4V9.6h2.4v1.1a2.5 2.5 0 0 1 2.2-1.2c1.6 0 2.9 1 2.9 3.3Z"/></svg>
-        <span class="tip">linkedin.com/in/mburu-karimi</span>
-      </a>
-      <a class="icon-btn" href="https://github.com/mburukarimi" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
-        <span class="tip">github.com/mburukarimi</span>
-      </a>
-      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
-        <svg class="sun" viewBox="0 0 24 24"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13a1 1 0 0 1-1-1V2a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1Zm0 18a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1ZM4 13H3a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2Zm17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2ZM5.6 6.6a1 1 0 0 1-.7-.3l-.7-.7a1 1 0 0 1 1.4-1.4l.7.7a1 1 0 0 1-.7 1.7Zm12.8 12.8a1 1 0 0 1-.7-.3l-.7-.7a1 1 0 0 1 1.4-1.4l.7.7a1 1 0 0 1-.7 1.7ZM18.4 6.6a1 1 0 0 1-.7-1.7l.7-.7a1 1 0 1 1 1.4 1.4l-.7.7a1 1 0 0 1-.7.3ZM5.6 19.4a1 1 0 0 1-.7-1.7l.7-.7a1 1 0 0 1 1.4 1.4l-.7.7a1 1 0 0 1-.7.3Z"/></svg>
-        <svg class="moon" viewBox="0 0 24 24"><path d="M21 13a9 9 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
-      </button>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
-      </button>
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">Mburu Karimi<span class="dot">.</span></a>
+  <div class="nav-right">
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects &amp; Experience</a></li>
+      <li><a href="leadership.html" style="color:var(--navy)">Leadership</a></li>
+      <li><a href="personal.html">Personal</a></li>
+      <li><a href="resume.html">Résumé &amp; Skills</a></li>
+    </ul>
+    <div class="contact-mini">
+      <a href="mailto:mburu@umich.edu">Email</a>
+      <a href="https://www.linkedin.com/in/mburu-karimi/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mburukarimi" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
 </header>
 
-<main>
-
-<section class="shell page-head">
-  <p class="eyebrow">Organizations &middot; Service &middot; Mentorship</p>
-  <h1 class="page-title">Leadership and<br>Involvement</h1>
-  <p class="page-sub">Two organizations co-founded, three boards served, and a handful of commitments that have nothing to do with a resume line.</p>
-</section>
-
-<hr class="rule-line">
-
-<section class="shell" style="padding-top:2.75rem">
-  <div class="lead-grid">
-
-    <!-- KOA -->
-    <article class="lead-card">
-      <h2 class="lead-org">Kappa Omega Alpha</h2>
-      <p class="lead-meta">Vice President, Internal Operations &middot; <span class="dates">2026 to Present</span></p>
-      <p>Pre-Law and Public Policy Professional Co-Ed Fraternity at the University of Michigan. I plan and execute professional development programming, coordinate treks to law firms and consulting organizations, and manage internal chapter operations. I created the UMLC legal case competition and conference, which brings pre-law students from across campus together for a competitive advocacy experience.</p>
-      <div class="photo-strip">
-        <figure><img src="images/leadership/koa/koa-board-formal.jpg" alt="Kappa Omega Alpha board" loading="lazy"><figcaption>Chapter board, 2026</figcaption></figure>
-        <figure><img src="images/leadership/koa/koa-alumni-panel.jpg" alt="KOA alumni panel event" loading="lazy"><figcaption>Joint alumni panel, April 2026</figcaption></figure>
-        <figure><img src="images/leadership/koa/koa-candid-atrium.jpg" alt="KOA members at Ross" loading="lazy"><figcaption>Between sessions, Ross</figcaption></figure>
-      </div>
-      <div class="card-links">
-        <a class="link-arrow" href="https://www.koaumich.org/" target="_blank" rel="noopener">koaumich.org <span>&rarr;</span></a>
-      </div>
-    </article>
-
-    <!-- EASA -->
-    <article class="lead-card">
-      <h2 class="lead-org">East African Students Association</h2>
-      <p class="lead-meta">President and Co-Founder &middot; <span class="dates">2024 to 2025</span></p>
-      <p>I co-founded EASA to create a dedicated community for students of East African descent at Michigan. As founding president I built the organization from nothing: recruiting an executive board, establishing event programming, coordinating cultural collaborations with other campus organizations, and working with university administration to secure recognition and resources. EASA is now a space for community, cultural celebration, and professional connection.</p>
-      <div class="photo-strip">
-        <figure><img src="images/leadership/easa/easa-tabling-diag.jpg" alt="EASA tabling on the Diag" loading="lazy"><figcaption>Where it started, Festifall</figcaption></figure>
-        <figure><img src="images/leadership/easa/easa-board-arch.jpg" alt="EASA board" loading="lazy"><figcaption>Executive board</figcaption></figure>
-        <figure><img src="images/leadership/easa/easa-board-formal.jpg" alt="EASA full board" loading="lazy"><figcaption>Full board, 2025</figcaption></figure>
-        <figure><img src="images/leadership/easa/easa-three-guys.jpg" alt="EASA members" loading="lazy"><figcaption>The founding group</figcaption></figure>
-      </div>
-    </article>
-
-    <!-- MBL -->
-    <article class="lead-card">
-      <h2 class="lead-org">Michigan Business Law</h2>
-      <p class="lead-meta">Research Associate and DEI Chair &middot; <span class="dates">2024 to 2025</span></p>
-      <p>A student organization at Michigan's Ross School of Business focused on legal and financial research. I contributed to the organization's research publications, producing formal legal analysis and macroeconomic updates. As DEI Chair I helped shape recruitment and programming to broaden participation in business law education.</p>
-      <div class="photo-strip">
-        <figure><img src="images/leadership/mbl/mbl-team-formal.jpg" alt="Michigan Business Law team" loading="lazy"><figcaption>Research team</figcaption></figure>
-        <figure><img src="images/leadership/mbl/mbl-team-silly.jpg" alt="Michigan Business Law team" loading="lazy"><figcaption>End of the year</figcaption></figure>
-      </div>
-      <div class="card-links">
-        <a class="link-arrow" href="https://mbc.studentlife.umich.edu/" target="_blank" rel="noopener">Organization page <span>&rarr;</span></a>
-      </div>
-    </article>
-
-    <!-- MUNUM -->
-    <article class="lead-card">
-      <h2 class="lead-org">Model United Nations at Michigan</h2>
-      <p class="lead-meta">Rapporteur &middot; <span class="dates">2024 to 2025</span></p>
-      <p>Served on conference committees and contributed to the formal record of debate and resolutions. This one was about giving back: I first attended MUNUM as a high school student, and that conference is a large part of why I ended up interested in policy and international relations at all.</p>
-      <div class="card-links">
-        <a class="link-arrow" href="https://www.munum.org/" target="_blank" rel="noopener">munum.org <span>&rarr;</span></a>
-      </div>
-    </article>
-
-    <!-- PSIP -->
-    <article class="lead-card">
-      <h2 class="lead-org">Public Service Internship Program</h2>
-      <p class="lead-meta">Selected Participant, DC Cohort &middot; <span class="dates">2025 to 2026</span></p>
-      <p>Selected for Michigan's PSIP DC Cohort, a competitive program placing students in public service internships in Washington, D.C. with structured professional development, mentorship, and funding support. One of a small cohort chosen for the DC placement.</p>
-      <div class="card-links">
-        <a class="link-arrow" href="https://vimeo.com/1191714961/45ad0a5581" target="_blank" rel="noopener">PSIP program overview <span>&rarr;</span></a>
-      </div>
-    </article>
-
-    <!-- Pre-Law Society -->
-    <article class="lead-card">
-      <h2 class="lead-org">Michigan Pre-Law Society</h2>
-      <p class="lead-meta">Professional Development Chair &middot; <span class="dates">Ongoing</span></p>
-      <p>I organize programming, speakers, and networking events supporting students pursuing law school and legal careers at Michigan. The goal is straightforward: make the path to law school less opaque for people who do not already have lawyers in their family.</p>
-    </article>
-
-    <!-- SIBS -->
-    <article class="lead-card">
-      <h2 class="lead-org">Support for Incoming Black Students</h2>
-      <p class="lead-meta">Peer Mentor &middot; <span class="dates">Ongoing</span></p>
-      <p>I mentor incoming Black students at Michigan as they navigate the transition to campus, find community, and access resources. This is one of the most personally meaningful commitments I have here.</p>
-      <div class="photo-strip">
-        <figure><img src="images/leadership/sibs/sibs-group-park.jpg" alt="SIBS mentors and mentees" loading="lazy"><figcaption>SIBS community</figcaption></figure>
-        <figure><img src="images/leadership/sibs/mlk-day-speaking.jpg" alt="Speaking at an MLK Day community event" loading="lazy"><figcaption>MLK Day community event, Troy</figcaption></figure>
-      </div>
-      <div class="card-links">
-        <a class="link-arrow" href="https://mesa.umich.edu/SIBS" target="_blank" rel="noopener">mesa.umich.edu/SIBS <span>&rarr;</span></a>
-      </div>
-    </article>
-
-    <!-- Maize and Blue Cupboard -->
-    <article class="lead-card">
-      <h2 class="lead-org">Maize and Blue Cupboard</h2>
-      <p class="lead-meta">Volunteer &middot; <span class="dates">Ongoing</span></p>
-      <p>I volunteer regularly at Michigan's student food pantry, and at soup kitchens in Detroit. Food insecurity on a campus this well resourced is not an abstraction; roughly one in three students nationally experiences it. This is the commitment that keeps me grounded.</p>
-      <div class="card-links">
-        <a class="link-arrow" href="https://mbc.studentlife.umich.edu/" target="_blank" rel="noopener">Maize and Blue Cupboard <span>&rarr;</span></a>
-      </div>
-    </article>
-
+<div class="page-hero reveal">
+  <div class="eyebrow">Leadership &amp; Involvement</div>
+  <h1>Building things &amp; leading people</h1>
+  <p>From co-founding organizations to serving on executive boards, leadership has been the throughline of my time at Michigan.</p>
+</div>
+<section style="padding-top:1rem;">
+  <div class="wrap">
+    <div class="tl">
+      <div class="tl-item reveal">
+      <div class="when">CURRENT</div>
+      <h3>Kappa Omega Alpha (KOA)</h3>
+      <div class="role">Vice President, Internal · Executive Board</div>
+      <p>Plan professional treks and internal operations for the pre-professional fraternity, and created the UMLC legal case competition and conference from the ground up.</p><div class="tl-photos"><img src="images/koa-trek-cornerstone.jpg" alt="KOA trek"><img src="images/koa-board.jpg" alt="KOA board"><img src="images/koa-puerto-rico-2024.jpg" alt="KOA trip"></div>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">2024 – 2025</div>
+      <h3>East African Students Association (EASA)</h3>
+      <div class="role">President &amp; Co-Founder</div>
+      <p>Co-founded EASA to give students of East African descent a space to thrive — planning events, booking spaces, and partnering with the university on cultural collaborations across other organizations.</p><div class="tl-photos"><img src="images/easa-founding-board-2024.jpg" alt="EASA founding board"><img src="images/easa-board.jpg" alt="EASA board"><img src="images/easa-founding-trio.jpg" alt="EASA co-founders"></div>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">2024 – PRESENT</div>
+      <h3>Michigan Business Law</h3>
+      <div class="role">Research Associate &amp; DEI Chair · Executive Board</div>
+      <p>Contribute to the research showcase and lead DEI initiatives while serving on the executive board.</p><div class="tl-photos"><img src="images/mbl-exec-board-2025.jpg" alt="MBL exec board"><img src="images/mbl-research-team-2024.jpg" alt="MBL research team"></div>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>Model United Nations at UM (MUNUM)</h3>
+      <div class="role">Member</div>
+      <p>Compete and staff conferences through the University of Michigan's Model UN organization, sharpening research, negotiation, and public-speaking skills.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">SUMMER 2026</div>
+      <h3>Public Service Internship Program (PSIP) — DC Cohort</h3>
+      <div class="role">Selected Participant</div>
+      <p>Selected for the University of Michigan's competitive PSIP DC cohort, a program placing students in public-service internships in Washington, D.C. with funding and structured professional development.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>Michigan Pre-Law Society</h3>
+      <div class="role">Member</div>
+      <p>Active in the pre-law community at Michigan, engaging with law-school preparation, speakers, and networking as I work toward a future in law.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>SIBS — Support for Incoming Black Students</h3>
+      <div class="role">Mentor</div>
+      <p>Mentor incoming Black students at Michigan — one of the roles I'm most proud of, helping new students find their footing and community on campus.</p>
+    </div>
+      <div class="tl-item reveal">
+      <div class="when">ONGOING</div>
+      <h3>Maize &amp; Blue Cupboard</h3>
+      <div class="role">Volunteer</div>
+      <p>Volunteer with the university's food-security resource, plus soup kitchens across Detroit.</p>
+    </div>
+    </div>
   </div>
 </section>
 
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div>
-      <div class="footer-name">Mburu Karimi</div>
-      <div class="footer-sub">Ford School of Public Policy &middot; Class of 2028</div>
-    </div>
-    <div class="footer-right">
-      <div class="footer-icons">
-        <a class="icon-btn" href="mailto:mburu@umich.edu" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg></a>
-        <a class="icon-btn" href="tel:+12483129650" aria-label="Phone"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg></a>
-        <a class="icon-btn" href="https://linkedin.com/in/mburu-karimi" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.4 18H6V9.6h2.4Zm-1.2-9.6a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8ZM18 18h-2.4v-4.2c0-1-.4-1.7-1.3-1.7a1.4 1.4 0 0 0-1.3 1 1.8 1.8 0 0 0-.1.6V18h-2.4V9.6h2.4v1.1a2.5 2.5 0 0 1 2.2-1.2c1.6 0 2.9 1 2.9 3.3Z"/></svg></a>
-        <a class="icon-btn" href="https://github.com/mburukarimi" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></a>
-      </div>
-      <div class="footer-copy">&copy; 2026 Mburu Karimi</div>
-    </div>
-  </div>
-</footer>
-
-<script src="site.js"></script>
+<footer class="site-foot">Mburu Karimi · Metro Detroit → Ann Arbor · mburu@umich.edu · (248) 312-9650</footer>
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+  const t=document.getElementById('navToggle'), m=document.getElementById('navMenu');
+  if(t){ t.addEventListener('click',()=>m.classList.toggle('open')); }
+  document.querySelectorAll('.xcard-head').forEach(h=>h.addEventListener('click',()=>h.parentElement.classList.toggle('open')));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>

@@ -1,475 +1,268 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects and Experience &middot; Mburu Karimi</title>
-<meta name="description" content="Consulting, finance, and research projects by Mburu Karimi.">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects & Experience | Mburu Karimi</title>
+<meta name="description" content="Mburu Karimi's consulting projects, internship, and selective programs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Newsreader:ital,wght@0,300;0,400;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<div class="cursor-ring" aria-hidden="true"></div>
-<div class="cursor-dot" aria-hidden="true"></div>
-
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="index.html">Mburu Karimi.</a>
-    <nav class="nav" id="nav" aria-label="Main">
-      <span class="nav-pill" id="navPill" aria-hidden="true"></span>
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="projects.html" aria-current="page">Projects</a>
-      <a class="nav-link" href="leadership.html">Leadership</a>
-      <a class="nav-link" href="personal.html">Personal</a>
-      <a class="nav-link" href="resume.html">Resume</a>
-    </nav>
-    <div class="header-tools">
-      <a class="icon-btn" href="mailto:mburu@umich.edu" aria-label="Email">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
-        <span class="tip">mburu@umich.edu</span>
-      </a>
-      <button class="icon-btn" id="phoneBtn" type="button" aria-label="Copy phone number">
-        <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
-        <span class="tip" id="phoneTip">(248) 312-9650</span>
-      </button>
-      <a class="icon-btn" href="https://linkedin.com/in/mburu-karimi" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.4 18H6V9.6h2.4Zm-1.2-9.6a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8ZM18 18h-2.4v-4.2c0-1-.4-1.7-1.3-1.7a1.4 1.4 0 0 0-1.3 1 1.8 1.8 0 0 0-.1.6V18h-2.4V9.6h2.4v1.1a2.5 2.5 0 0 1 2.2-1.2c1.6 0 2.9 1 2.9 3.3Z"/></svg>
-        <span class="tip">linkedin.com/in/mburu-karimi</span>
-      </a>
-      <a class="icon-btn" href="https://github.com/mburukarimi" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
-        <span class="tip">github.com/mburukarimi</span>
-      </a>
-      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
-        <svg class="sun" viewBox="0 0 24 24"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13a1 1 0 0 1-1-1V2a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1Zm0 18a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1ZM4 13H3a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2Zm17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2ZM5.6 6.6a1 1 0 0 1-.7-.3l-.7-.7a1 1 0 0 1 1.4-1.4l.7.7a1 1 0 0 1-.7 1.7Zm12.8 12.8a1 1 0 0 1-.7-.3l-.7-.7a1 1 0 0 1 1.4-1.4l.7.7a1 1 0 0 1-.7 1.7ZM18.4 6.6a1 1 0 0 1-.7-1.7l.7-.7a1 1 0 1 1 1.4 1.4l-.7.7a1 1 0 0 1-.7.3ZM5.6 19.4a1 1 0 0 1-.7-1.7l.7-.7a1 1 0 0 1 1.4 1.4l-.7.7a1 1 0 0 1-.7.3Z"/></svg>
-        <svg class="moon" viewBox="0 0 24 24"><path d="M21 13a9 9 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
-      </button>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
-      </button>
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">Mburu Karimi<span class="dot">.</span></a>
+  <div class="nav-right">
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" style="color:var(--navy)">Projects &amp; Experience</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="personal.html">Personal</a></li>
+      <li><a href="resume.html">Résumé &amp; Skills</a></li>
+    </ul>
+    <div class="contact-mini">
+      <a href="mailto:mburu@umich.edu">Email</a>
+      <a href="https://www.linkedin.com/in/mburu-karimi/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mburukarimi" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
 </header>
 
-<main>
+<div class="page-hero reveal">
+  <div class="eyebrow">Projects &amp; Experience</div>
+  <h1>Where I've done the work</h1>
+  <p>Client consulting engagements, an equity pitch, my summer internship, and the competitive programs I've been selected for. Click any card to expand the full story.</p>
+</div>
 
-<section class="shell page-head">
-  <p class="eyebrow">Internship &middot; Consulting &middot; Finance &middot; Research</p>
-  <h1 class="page-title">Projects and<br>Experience</h1>
-  <p class="page-sub">Client work across aerospace, healthcare, automotive, workforce solutions, and criminal justice policy, plus equity research and legal writing. Click any card to open it.</p>
-</section>
-
-<hr class="rule-line">
-
-<!-- ==================== INTERNSHIP ==================== -->
-<section class="shell group">
-  <div class="section-head"><span class="label">Internship</span><span class="line"></span></div>
-
-  <article class="xcard" id="kellyocg">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#00A650">KOCG</span>
-      <span>
-        <span class="xcard-org">KellyOCG &middot; Troy, Michigan</span>
-        <span class="xcard-title">HR Technology Strategy and Market Research</span>
-        <span class="xcard-role">Business Analyst Summer Intern &middot; June 2026 to August 2026</span>
-        <span class="xcard-scope">Three workstreams across one summer: an AI-integrated HR technology roadmap for a major manufacturer, market research on energy vertical expansion, and an enterprise transformation strategy delivered to senior leadership.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">What I did</p>
-          <ul>
-            <li>Developed an HR technology strategy roadmap for a $52B agriculture and machinery manufacturer, building AI integration workflows across 4 IT support teams and restructuring ServiceNow MAC employee lifecycle processes projected to cut manual ticket resolution time by 20%. Supported a Workday HCM migration with an HTML redesign of 100+ emails to standardize internal communications.</li>
-            <li>Conducted market research on KellyOCG's energy vertical expansion, analyzing oil and gas refinery supply chain dynamics, foreign policy shifts, and contingent workforce demand forecasts using CAGR projections and geopolitical risk indicators. Benchmarked competitor MSP penetration across 5+ staffing firms and identified 3 overlooked enterprise clients with high contingent labor growth trajectories.</li>
-            <li>Built an enterprise transformation plan supporting a 5-year organizational vision by analyzing staffing industry dynamics, labor market trends, and corporate brand positioning across 3 core business units. Synthesized the work into a strategic report presented to senior leadership that directly informed workforce realignment, brand consolidation, and technology investment priorities.</li>
-          </ul>
-
-          <div class="photo-strip">
-            <figure><img src="images/work/kelly/kelly-intern-cohort.jpg" alt="KellyOCG intern cohort" loading="lazy"><figcaption>Intern cohort, Summer 2026</figcaption></figure>
-            <figure><img src="images/work/kelly/kelly-boardroom.jpg" alt="Team working session" loading="lazy"><figcaption>Team working session</figcaption></figure>
-            <figure><img src="images/work/kelly/kelly-detroit-portrait.jpg" alt="Downtown Detroit" loading="lazy"><figcaption>Downtown Detroit</figcaption></figure>
-            <figure><img src="images/work/kelly/kelly-focus-hope.jpg" alt="Focus: HOPE volunteer day" loading="lazy"><figcaption>Focus: HOPE volunteer day</figcaption></figure>
-          </div>
-
-          <div class="pills">
-            <span class="pill">HR Tech Strategy</span><span class="pill">ServiceNow</span><span class="pill">Workday HCM</span><span class="pill">Market Research</span><span class="pill">AI Integration</span><span class="pill">HTML</span>
-          </div>
-        </div>
-      </div>
+<section style="padding-top:1rem;">
+  <div class="wrap">
+    <div class="group-head reveal"><h2>Consulting Work</h2><span class="count">05</span></div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/boeing.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>Anticipating Private Equity Disruption in Boeing's Supply Chain</h3>
+      <div class="sub">MEG Consulting · Project Manager · Supply Chain, Procurement &amp; Risk</div>
+      <div class="scope">Led a team building a predictive model to flag which of Boeing's suppliers were at risk of private-equity buyouts — a multi-billion-dollar exposure across the aerospace supply chain.</div>
     </div>
-  </article>
-</section>
-
-<!-- ==================== CONSULTING ==================== -->
-<section class="shell group">
-  <div class="section-head"><span class="label">Consulting &middot; Four projects</span><span class="line"></span></div>
-
-  <!-- Boeing -->
-  <article class="xcard" id="boeing">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#0039A6">BA</span>
-      <span>
-        <span class="xcard-org">Boeing &middot; MEG Consulting</span>
-        <span class="xcard-title">Predicting Private Equity Acquisition Risk Across the Supplier Base</span>
-        <span class="xcard-role">Project Manager &middot; Presented May 2026</span>
-        <span class="xcard-scope">Built predictive models for an $89.5B aerospace manufacturer to forecast which of 7,000+ supplier OEMs were at risk of private equity acquisition.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">What I did</p>
-          <ul>
-            <li>Led a team building 3 predictive models in Python, R, and STATA to forecast private equity acquisition risk across more than 7,000 supplier OEMs in Boeing's aerospace supply chain.</li>
-            <li>Assessed 15+ financial distress indicators including leverage ratios, margin compression, revenue volatility, and ownership concentration to construct the feature set.</li>
-            <li>Trained an ensemble combining logistic regression, random forest, and gradient boosting that reached roughly 85% accuracy on the test set.</li>
-            <li>Identified 40 high-risk suppliers and delivered the findings to the client with recommended monitoring and mitigation priorities.</li>
-          </ul>
-          <p class="sub-label">Outcome</p>
-          <p>Gave Boeing an early warning framework for supply chain consolidation risk, letting procurement teams focus attention on the vendors most likely to change hands.</p>
-          <div class="pills">
-            <span class="pill">Python</span><span class="pill">R</span><span class="pill">STATA</span><span class="pill">Ensemble Modeling</span><span class="pill">Supply Chain Risk</span><span class="pill">Private Equity</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- BCBSM -->
-  <article class="xcard" id="bcbsm">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#0072CE">BCBS</span>
-      <span>
-        <span class="xcard-org">Blue Cross Blue Shield of Michigan &middot; MEG Consulting</span>
-        <span class="xcard-title">AI Product Strategy for a $40B Health Insurer</span>
-        <span class="xcard-role">Business Analyst &middot; Michigan Ross &middot; 2025</span>
-        <span class="xcard-scope">Spearheaded an AI product strategy workstream for a $40B Midwest healthcare insurance provider, covering CRM augmentation, governance, and adoption readiness.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">What I did</p>
-          <ul>
-            <li>Evaluated Oracle CRM augmentation opportunities across 25+ departments through competitor benchmarking and expert interviews.</li>
-            <li>Produced a NIST governance framework paired with a custom SDLC blueprint for responsible AI deployment.</li>
-            <li>Built employee sentiment Qualtrics survey mockups to measure adoption readiness, creating a pathway toward company-wide rollout and future cost savings.</li>
-          </ul>
-
-          <div class="photo-strip">
-            <figure><img src="images/work/meg/meg-bcbsm-presentation.jpg" alt="Final presentation at Michigan Ross" loading="lazy"><figcaption>Final presentation, Michigan Ross</figcaption></figure>
-          </div>
-
-          <div class="pills">
-            <span class="pill">Healthcare Strategy</span><span class="pill">Oracle CRM</span><span class="pill">NIST Framework</span><span class="pill">Qualtrics</span><span class="pill">Competitor Benchmarking</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- Slate Auto -->
-  <article class="xcard" id="slate">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#1F1F1F">SLATE</span>
-      <span>
-        <span class="xcard-org">Slate Auto &middot; MEG Consulting</span>
-        <span class="xcard-title">Accessory SKU Strategy for a Venture-Backed EV Startup</span>
-        <span class="xcard-role">Business Analyst &middot; 2025</span>
-        <span class="xcard-scope">Advised a $1.4B+ venture-backed electric vehicle startup on accessory product strategy, producing a three-year roadmap grounded in competitor benchmarking.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">What I did</p>
-          <ul>
-            <li>Benchmarked accessory portfolios and pricing strategies across Tesla, BYD, and Rivian to establish the competitive baseline.</li>
-            <li>Produced a ranked list of 30 to 50 accessory SKUs with demographic-targeted bundles matched to distinct buyer segments.</li>
-            <li>Built a make-versus-partner scoring framework to guide which SKUs to manufacture in house and which to source through partnerships.</li>
-            <li>Packaged the analysis into a three-year product roadmap for the client's leadership team.</li>
-          </ul>
-          <div class="pills">
-            <span class="pill">Product Strategy</span><span class="pill">Competitive Benchmarking</span><span class="pill">Market Segmentation</span><span class="pill">EV Industry</span><span class="pill">Roadmapping</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- MPC -->
-  <article class="xcard" id="mpc">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#14213D">MPC</span>
-      <span>
-        <span class="xcard-org">Michigan Political Consulting</span>
-        <span class="xcard-title">Exoneree Microloan Program and Police Accountability Database Design</span>
-        <span class="xcard-role">Political Consultant &middot; 2025</span>
-        <span class="xcard-scope">Co-led the design of Michigan's first microloan program for exonerees, built with the Wayne County Conviction Integrity Unit and the Organization of Exonerees.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">What I did</p>
-          <ul>
-            <li>Co-designed a zero-interest lending framework projected to deliver $1.2M+ in annual capital access to more than 50 exonerees rebuilding their lives after wrongful conviction.</li>
-            <li>Authored the memorandum of understanding, the loan application framework, and the advisory board governance model.</li>
-            <li>Contributed to a separate proposal for a statewide police accountability database.</li>
-          </ul>
-          <p class="sub-label">Why it mattered</p>
-          <p>People released after a wrongful conviction often leave prison with no credit history and no access to conventional lending. The program was designed to close that gap through a structure that community partners could actually administer.</p>
-
-          <div class="photo-strip">
-            <figure><img src="images/work/meg/mpc-presentation.jpg" alt="Final deliverables presentation" loading="lazy"><figcaption>Final deliverables presentation</figcaption></figure>
-          </div>
-
-          <div class="pills">
-            <span class="pill">Policy Design</span><span class="pill">Criminal Justice</span><span class="pill">Program Governance</span><span class="pill">Stakeholder Management</span><span class="pill">Formal Writing</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
-
-<!-- ==================== FINANCE ==================== -->
-<section class="shell group">
-  <div class="section-head"><span class="label">Finance &middot; Two equity pitches</span><span class="line"></span></div>
-
-  <!-- Concentra -->
-  <article class="xcard" id="concentra">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#111418">BG</span>
-      <span>
-        <span class="xcard-org">BlackGen Capital</span>
-        <span class="xcard-title">Buy Recommendation: Concentra Holdings (NYSE: CON)</span>
-        <span class="xcard-role">Pitch Team Lead &middot; September 2025 to Present</span>
-        <span class="xcard-scope">Directed a five-analyst team through an eight-week equity research engagement. Buy at $19.47 with a $26.58 target, roughly 36.5% upside.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">What I did</p>
-          <ul>
-            <li>As Pitch Team Lead, directed 5 analysts through an 8-week engagement, allocating responsibilities across comparable company analysis, DCF modeling, and revenue builds.</li>
-            <li>Enforced weekly milestone reviews and conducted final review of every output before submission.</li>
-            <li>Delivered a buy recommendation at $19.47 with a price target of $26.58, implying roughly 36.5% upside.</li>
-          </ul>
-          <p class="sub-label">Outcome</p>
-          <p>The pitch was selected to represent the University of Michigan at the BlackGen national conference in New York City, competing against all nine chapters.</p>
-          <div class="pills">
-            <span class="pill">Equity Research</span><span class="pill">DCF Modeling</span><span class="pill">Comps Analysis</span><span class="pill">Team Leadership</span><span class="pill">Healthcare Services</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- AMD -->
-  <article class="xcard" id="amd">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#111418">BG</span>
-      <span>
-        <span class="xcard-org">BlackGen Capital</span>
-        <span class="xcard-title">Buy Recommendation: Advanced Micro Devices (NASDAQ: AMD)</span>
-        <span class="xcard-role">Investment Analyst &middot; 2025</span>
-        <span class="xcard-scope">Built the comparable company analysis and forward EBITDA projection behind a thesis identifying roughly 35% undervaluation driven by AI data center demand and GPU margin expansion.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">Investment thesis</p>
-          <ul>
-            <li>A sell-off sparked by competitor partnership headlines created an attractive entry point. AMD dropped nearly 6% on the news then recovered quickly, signaling the market recognized the limited near-term threat.</li>
-            <li>Trading around $157 at the time of the pitch, below a 52-week high of $186 and under a one-year analyst target of roughly $185, with a market capitalization near $255B.</li>
-            <li>Gross margins around 43%, a solid cash position, a P/E of 94 reflecting growth expectations, and an earnings yield of roughly 16%.</li>
-            <li>Built a comparable company analysis in Excel and a forward EBITDA projection identifying roughly 35% undervaluation driven by rising AI data center demand and GPU margin expansion.</li>
-            <li>U.S. semiconductor incentives and export controls favor domestic chip designers, reducing geopolitical risk and channeling federal funding toward AI-ready products.</li>
-          </ul>
-          <p class="sub-label">Outcome</p>
-          <p>Presented to finance professors for approval for inclusion in the $25K AUM fund portfolio.</p>
-          <div class="pills">
-            <span class="pill">Equity Research</span><span class="pill">Comparable Company Analysis</span><span class="pill">EBITDA Projection</span><span class="pill">Semiconductors</span><span class="pill">AI Infrastructure</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
-
-<!-- ==================== RESEARCH ==================== -->
-<section class="shell group">
-  <div class="section-head"><span class="label">Research and Formal Writing</span><span class="line"></span></div>
-
-  <article class="xcard" id="mbl">
-    <button class="xcard-head" type="button">
-      <span class="logo-tile" style="background:#14213D;color:#C6A15B">MBL</span>
-      <span>
-        <span class="xcard-org">Michigan Business Law &middot; Ross School of Business</span>
-        <span class="xcard-title">Legal Research and Macroeconomic Writing</span>
-        <span class="xcard-role">Research Associate and DEI Chair &middot; 2024 to 2025</span>
-        <span class="xcard-scope">Two research outputs: a formal analysis of a landmark Supreme Court ruling, and a macroeconomic legal update covering housing markets, Fed policy, and regulatory action.</span>
-      </span>
-      <span class="xcard-toggle" aria-hidden="true">+</span>
-    </button>
-
-    <div class="xcard-body">
-      <div class="xcard-inner">
-        <div class="xcard-content">
-          <p class="sub-label">Research output 1 &middot; Legal analysis</p>
-          <p>Authored a formal research paper analyzing <em>Loper Bright Enterprises v. Raimondo</em>, the 2024 Supreme Court decision overturning the Chevron deference doctrine. Argued that the ruling correctly reestablished the judiciary's constitutional duty to interpret statutes, limiting executive agency overreach, and examined the implications for the SEC, EPA, FCC, and administrative law more broadly.</p>
-
-          <p class="sub-label">Research output 2 &middot; Macroeconomic legal update</p>
-          <p>Co-authored Legal Update 6 (December 2024), covering housing market dynamics including the new-home premium falling to 3%, its lowest level since 1980; Federal Reserve rate policy with a projected cut to 4.25% to 4.5%; commodity market impacts of proposed tariffs; the Biden pardon; the South Korean martial law declaration; and the FTC antitrust investigation into Microsoft.</p>
-
-          <div class="photo-strip">
-            <figure><img src="images/leadership/mbl/mbl-team-formal.jpg" alt="Michigan Business Law research team" loading="lazy"><figcaption>Research team, 2025</figcaption></figure>
-            <figure><img src="images/leadership/mbl/mbl-team-silly.jpg" alt="Michigan Business Law team" loading="lazy"><figcaption>The same team, off the clock</figcaption></figure>
-          </div>
-
-          <div class="pills">
-            <span class="pill">Legal Research</span><span class="pill">Administrative Law</span><span class="pill">Macroeconomics</span><span class="pill">Formal Writing</span><span class="pill">Chevron Doctrine</span>
-          </div>
-
-          <div class="card-links">
-            <a class="link-arrow" href="https://mbc.studentlife.umich.edu/" target="_blank" rel="noopener">Michigan Business Law <span>&rarr;</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
-
-<!-- ==================== SELECTIVE PROGRAMS ==================== -->
-<section class="shell group">
-  <div class="section-head"><span class="label">Selective Programs</span><span class="line"></span></div>
-
-  <div class="more-grid" style="margin-bottom:1.5rem">
-    <a class="more-card" href="https://www.pwc.com/us/en/careers/campus/programs-and-events/career-preview.html" target="_blank" rel="noopener">
-      <h4>PwC</h4>
-      <p>Career Preview, Consulting Track. A multi-day immersion into PwC's consulting practice.</p>
-      <span class="go-mini">Program page &rarr;</span>
-    </a>
-    <a class="more-card" href="https://www.cornerstone.com/wp-content/uploads/2025/07/CR_2026_First-Year-Foundations.pdf" target="_blank" rel="noopener">
-      <h4>Cornerstone Research</h4>
-      <p>First-Year Foundations. An introduction to economic and litigation consulting.</p>
-      <span class="go-mini">Program page &rarr;</span>
-    </a>
-    <a class="more-card" href="https://careers.bcg.com/" target="_blank" rel="noopener">
-      <h4>BCG</h4>
-      <p>Bridge to Consulting. Early exposure to case work and the consulting recruiting path.</p>
-      <span class="go-mini">Careers page &rarr;</span>
-    </a>
-    <a class="more-card" href="https://michiganross.umich.edu/" target="_blank" rel="noopener">
-      <h4>University of Michigan</h4>
-      <p>Emerging Leaders. A selective campus leadership development program.</p>
-      <span class="go-mini">Learn more &rarr;</span>
-    </a>
-    <a class="more-card" href="https://seo-usa.org/career/" target="_blank" rel="noopener">
-      <h4>SEO Career</h4>
-      <p>Career preparation and placement program for underrepresented students in business.</p>
-      <span class="go-mini">Program page &rarr;</span>
-    </a>
-    <a class="more-card" href="https://mlt.org/career-prep/" target="_blank" rel="noopener">
-      <h4>MLT</h4>
-      <p>Career Prep Scholar. Multi-year coaching toward competitive business and consulting roles.</p>
-      <span class="go-mini">Program page &rarr;</span>
-    </a>
+    <div class="xcard-toggle">+</div>
   </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">Private equity funds were quietly acquiring Boeing's mechanical and standards-commodity suppliers, then imposing disruptive pricing and breaking long-held contracts — inflating costs across larger parts, electronics, and propulsion. Boeing wanted to see it coming.</p>
+    <h4>What I led</h4><p>As Project Manager, I coordinated the engagement with Boeing's Supply Chain, Procurement, and Risk Management teams. Their data was disorganized, so I first delegated the cleaning and structuring effort, then led the overall solution design — a Private Equity Activity Predictive model combining statistics, financial metrics, company data, and economic research.</p><h4>How we built it</h4><ul><li>Compiled a dataset of 100+ suppliers (bought-out and not) across sub-commodities</li><li>Interviewed finance, operations, and legal professors to pressure-test variables and approach</li><li>Built and tested models in RStudio and MATLAB, then converged on a final ensemble</li><li>Split data 80/20, scored on a held-out test set, and tuned a Yes/No threshold from precision, recall, and F1</li></ul><h4>Result</h4><p>The final ensemble (Logistic Regression + Random Forest + Gradient Boosting) reached ~85% test accuracy with a strong ROC-AUC, outputting a buyout-likelihood score and confidence for each supplier. It was handed to Boeing's supply chain team to shape sourcing decisions and contract strategy around at-risk vendors.</p>
+    <div class="pills"><span class="pill-sm">Predictive Modeling</span><span class="pill-sm">R / RStudio</span><span class="pill-sm">Python</span><span class="pill-sm">MATLAB</span><span class="pill-sm">Logistic Regression</span><span class="pill-sm">Random Forest</span><span class="pill-sm">Gradient Boosting</span></div>
+    <div class="xcard-links"><a href="https://www.meg-consulting.org/" target="_blank" rel="noopener">MEG Consulting ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/bcbsm.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>Blue Cross Blue Shield of Michigan</h3>
+      <div class="sub">MEG Consulting · Presented at Michigan Ross · 2025</div>
+      <div class="scope">A client engagement with BCBSM, culminating in a final recommendation presented at the University of Michigan Ross School of Business.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">Worked as part of a MEG Consulting team on a strategic problem for Blue Cross Blue Shield of Michigan, delivering findings to the client at a formal presentation hosted at Michigan Ross.</p>
+    <h4>What I did</h4><p>[Add your specific role and the core question BCBSM asked. What did your team analyze, and what was your individual contribution?]</p><h4>Approach</h4><p>[Add the analysis approach — data, frameworks, or research your team used.]</p><h4>Outcome</h4><p>[Add the recommendation your team delivered and how it was received.]</p>
+    <div class="pills"><span class="pill-sm">Healthcare</span><span class="pill-sm">Strategy</span><span class="pill-sm">Client Presentation</span></div>
+    <div class="xcard-links"><a href="https://www.meg-consulting.org/" target="_blank" rel="noopener">MEG Consulting ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/slate.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>Slate Auto — EV Accessory Strategy</h3>
+      <div class="sub">MEG Consulting · Business Analyst</div>
+      <div class="scope">Built the market-research and SKU strategy for Slate, the affordable-EV startup — recommending a demographic-driven accessory lineup and domestic sourcing to protect margins after the federal EV tax-credit removal.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">Slate is positioned as an affordable, customizable EV. With the September 2025 removal of the $7,500 federal tax credit reshaping the market, the team explored how Slate should build out its accessory ecosystem to drive revenue beyond the base vehicle while keeping the price low.</p>
+    <h4>What I contributed</h4><ul><li>Analyzed U.S. auto and global EV market dynamics (~16.2M U.S. vehicle sales in 2025; EV tax-credit policy shifts)</li><li>Benchmarked OEM accessory strategies against Tesla, BYD, and Rivian to identify Slate's positioning</li><li>Assessed raw-material and tariff/supply-chain risk to recommend domestic sourcing and make-vs-partner criteria</li></ul><h4>Recommendation</h4><p>Prioritize demographic-driven, utility-focused accessory packages (e.g. an "Adventure Pack"), source domestically to preserve state incentive eligibility and limit tariff exposure, and partner with established accessory manufacturers rather than building in-house. Deliverable: a prioritized ranking of 30–50 SKUs with bundling and a 2–3 year roadmap.</p>
+    <div class="pills"><span class="pill-sm">Automotive / EV</span><span class="pill-sm">Market Research</span><span class="pill-sm">SKU Strategy</span><span class="pill-sm">Supply Chain</span></div>
+    <div class="xcard-links"><a href="https://www.meg-consulting.org/" target="_blank" rel="noopener">MEG Consulting ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/mpc.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>Organization of Exonerees — Funding &amp; Program Design</h3>
+      <div class="sub">Michigan Political Consulting (MPC) · Wayne County OOE / CIU</div>
+      <div class="scope">Designed funding pathways and program structure for two justice initiatives serving Michigan exonerees: an interest-free microloan fund and a statewide police-accountability database.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">Michigan's existing means of supporting newly released exonerees are limited and slow. Working through MPC with the Organization of Exonerees and Conviction Integrity Units, the team designed the structures — and the funding — to change that.</p>
+    <h4>Microloan fund</h4><p>Helped structure an Exoneree Assistance Loan Program: interest-free advances for housing, transportation, and reintegration, repaid through eventual wrongful-conviction compensation. Built out the memorandum of understanding framework and an advisory-board governance model.</p><h4>Police-accountability database</h4><p>Contributed to a proposal for a Michigan police-accountability database modeled on New York, Maryland, and California — mapping housing (CDAM), data pipelines (Detroit BOPC dashboard), Tableau visualization, ~$100–150K cost, and legislative/opposition analysis with Lansing stakeholders.</p><h4>Funding research</h4><p>Compiled and vetted 40+ potential funders (foundations and federal grants — AWS Imagine, Public Interest Tech Fund, BJA Second Chance Act, and more), mapping deadlines, funding ranges, and required first actions into a prioritized sourcing pipeline.</p>
+    <div class="pills"><span class="pill-sm">Public Sector</span><span class="pill-sm">Policy</span><span class="pill-sm">Grant Research</span><span class="pill-sm">Program Design</span></div>
+    <div class="xcard-links"><a href="https://www.michiganpoliticalconsulting.org/" target="_blank" rel="noopener">Michigan Political Consulting ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/blackgen.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>BlackGen Capital — Concentra (NYSE: CON) Equity Pitch</h3>
+      <div class="sub">BlackGen Capital · Equity Research Analyst</div>
+      <div class="scope">Co-authored a Buy recommendation on Concentra Group Holdings, the largest U.S. occupational-health provider — building the thesis and DCF that targeted 36% upside.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">BlackGen Capital is a competitive, 100% minority-owned national student investment fund (chapters at Cornell, Michigan, Penn, Princeton, Columbia, Yale, NYU, Georgetown, and USC) where members complete a rigorous educational series before pitching stock ideas to the national fund. I was part of the team that pitched Concentra.</p>
+    <h4>The thesis</h4><p>Recommended <strong>Buy at $19.47</strong> with a <strong>$26.58 target (≈36.5% upside)</strong>. Concentra treats 1 in 5 U.S. work-related injuries, serves 100% of the Fortune 100, and had just pivoted toward contract-based onsite clinics and AI-embedded workflows — a platform shift we argued the market was mispricing.</p><h4>What I contributed</h4><p>[Add which parts you owned — e.g. industry overview, company/segment analysis, valuation build, or a specific thesis pillar. The deck covered occupational-health market sizing, competitive moat, the onsite/telehealth platform shift, and a DCF at 7.21% WACC / 2.5% terminal growth.]</p>
+    <div class="pills"><span class="pill-sm">Equity Research</span><span class="pill-sm">Valuation / DCF</span><span class="pill-sm">Healthcare</span><span class="pill-sm">Financial Modeling</span></div>
+    <div class="xcard-links"><a href="https://www.blackgencapital.com/" target="_blank" rel="noopener">BlackGen Capital ↗</a></div>
+  </div></div>
+</div>
 
-  <div class="photo-strip">
-    <figure><img src="images/work/pwc/pwc-big-house-field.jpg" alt="PwC event at Michigan Stadium" loading="lazy"><figcaption>PwC at Michigan Stadium</figcaption></figure>
-    <figure><img src="images/work/pwc/pwc-career-preview-banner.jpg" alt="PwC Career Preview" loading="lazy"><figcaption>PwC Career Preview</figcaption></figure>
-    <figure><img src="images/leadership/koa/koa-cornerstone-visit.jpg" alt="Cornerstone Research office visit" loading="lazy"><figcaption>Cornerstone Research office visit</figcaption></figure>
-    <figure><img src="images/work/meg/meg-ey-office.jpg" alt="EY office visit" loading="lazy"><figcaption>EY office visit</figcaption></figure>
+    <div class="group-head reveal"><h2>Internship</h2><span class="count">01</span></div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/kellyocg.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>KellyOCG</h3>
+      <div class="sub">Summer 2026 Internship</div>
+      <div class="scope">Summer 2026 internship with KellyOCG, the outsourcing and consulting arm of Kelly — a global leader in workforce solutions and managed services.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">KellyOCG is the consulting and outsourcing group within Kelly, advising organizations on talent supply-chain and workforce strategy.</p>
+    <h4>Role</h4><p>[Add your title, team, and dates once you start. What function are you supporting?]</p><h4>Focus</h4><p>[Add 1–2 things you'll work on or accomplish — projects, tools, or deliverables.]</p>
+    <div class="pills"><span class="pill-sm">Consulting</span><span class="pill-sm">Workforce Solutions</span><span class="pill-sm">Summer 2026</span></div>
+    <div class="xcard-links"><a href="https://www.kellyocg.com/" target="_blank" rel="noopener">KellyOCG ↗</a></div>
+  </div></div>
+</div>
+
+    <div class="group-head reveal"><h2>Selective Programs</h2><span class="count">06</span></div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/pwc.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>PwC Career Preview — Consulting Track</h3>
+      <div class="sub">Selected Participant · PwC</div>
+      <div class="scope">Selected for PwC's competitive early-identification program on the consulting track, with exposure to the firm's work, professionals, and recruiting pipeline.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">PwC Career Preview is a competitive, application-based program that gives a select group of underclassmen an early, hands-on introduction to careers at PwC — including skill-building sessions, networking with professionals, and insight into the consulting practice.</p>
+    
+    
+    <div class="xcard-links"><a href="https://www.pwc.com/us/en/careers.html" target="_blank" rel="noopener">Selected Participant ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/cornerstone.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>Cornerstone Research — First-Year Foundations</h3>
+      <div class="sub">Selected Participant · Cornerstone Research</div>
+      <div class="scope">Selected for Cornerstone Research's competitive first-year program introducing economic consulting — the use of economics, finance, and data in legal and regulatory proceedings.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">First-Year Foundations is a selective career-development program for a small cohort of first-year students, offering an introduction to the niche field of economic consulting, a hands-on project based on real case types, and direct networking with consultants.</p>
+    
+    
+    <div class="xcard-links"><a href="https://www.cornerstone.com/careers/" target="_blank" rel="noopener">Selected Participant ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/bcg.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>BCG Bridge to Consulting</h3>
+      <div class="sub">Selected Participant · Boston Consulting Group</div>
+      <div class="scope">Selected for BCG's competitive early-talent program designed to introduce high-potential students to management consulting and the BCG recruiting path.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">Bridge to Consulting is a competitive, application-based BCG program that builds core consulting skills, connects participants with BCG consultants and recruiters, and offers an inside look at life at one of the top strategy firms.</p>
+    
+    
+    <div class="xcard-links"><a href="https://careers.bcg.com/" target="_blank" rel="noopener">Selected Participant ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/mlt.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>U-M Emerging Leaders</h3>
+      <div class="sub">Selected Participant · University of Michigan</div>
+      <div class="scope">Selected for a competitive University of Michigan leadership-development program for high-potential students.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">A selective University of Michigan program developing leadership, professional readiness, and community among a chosen cohort of emerging student leaders.</p>
+    
+    
+    
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/seo.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>SEO Career</h3>
+      <div class="sub">Program Member · Sponsors for Educational Opportunity</div>
+      <div class="scope">Member of SEO Career, a highly competitive program preparing talented students from underrepresented backgrounds for careers in business and finance.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">SEO Career is a rigorous, highly selective program providing training, mentorship, and a direct pipeline to competitive internships at leading firms in finance, consulting, and beyond.</p>
+    
+    
+    <div class="xcard-links"><a href="https://www.seo-usa.org/" target="_blank" rel="noopener">Program Member ↗</a></div>
+  </div></div>
+</div>
+    <div class="xcard reveal">
+  <div class="xcard-head">
+    <div class="xcard-logo"><img src="logos/mlt.svg" alt=""></div>
+    <div class="xcard-title">
+      <h3>MLT Career Prep (CP28)</h3>
+      <div class="sub">Fellow · Management Leadership for Tomorrow</div>
+      <div class="scope">Fellow in MLT's competitive Career Prep program (Class of 2028 cohort), a multi-year professional-development pipeline for high-achieving underrepresented talent.</div>
+    </div>
+    <div class="xcard-toggle">+</div>
+  </div>
+  <div class="xcard-body"><div class="xcard-body-inner">
+    <p class="lead">MLT Career Prep is a selective, multi-year fellowship that pairs high-achieving underrepresented students with coaching, a structured curriculum, and access to a network of top employers across business sectors.</p>
+    
+    
+    <div class="xcard-links"><a href="https://mlt.org/" target="_blank" rel="noopener">Fellow ↗</a></div>
+  </div></div>
+</div>
   </div>
 </section>
 
-<!-- ==================== COMING SOON ==================== -->
-<section class="shell group" style="padding-bottom:4rem">
-  <div class="section-head"><span class="label">Coming Soon</span><span class="line"></span></div>
-  <p class="group-note">Self-driven data projects in progress. Check back as these develop.</p>
-
-  <article class="xcard coming-soon">
-    <span class="soon-badge">In progress</span>
-    <div class="xcard-head">
-      <span class="logo-tile" style="background:#3A6EA5">SQL</span>
-      <span>
-        <span class="xcard-org">Personal Project &middot; Python, SQL, Tableau</span>
-        <span class="xcard-title">Sports Statistics Analysis</span>
-        <span class="xcard-scope">Building a sports statistics database and visualization dashboard exploring performance trends across NBA and soccer datasets.</span>
-      </span>
-    </div>
-  </article>
-
-  <article class="xcard coming-soon">
-    <span class="soon-badge">In progress</span>
-    <div class="xcard-head">
-      <span class="logo-tile" style="background:#2E7D5B">GIS</span>
-      <span>
-        <span class="xcard-org">Personal Project &middot; Python, ArcGIS, R</span>
-        <span class="xcard-title">Public Policy Data Analysis</span>
-        <span class="xcard-scope">Applying data science to public policy questions, analyzing urban development patterns, education outcomes, and demographic trends using publicly available government datasets.</span>
-      </span>
-    </div>
-  </article>
-
-  <article class="xcard coming-soon">
-    <span class="soon-badge">In progress</span>
-    <div class="xcard-head">
-      <span class="logo-tile" style="background:#8A5A2B">PBI</span>
-      <span>
-        <span class="xcard-org">Personal Project &middot; Python, Power BI, SQL</span>
-        <span class="xcard-title">Supply Chain Risk Modeling</span>
-        <span class="xcard-scope">Extending the Boeing private equity prediction work to broader industries using Kaggle datasets, with a focus on distress signals that generalize across sectors.</span>
-      </span>
-    </div>
-  </article>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div>
-      <div class="footer-name">Mburu Karimi</div>
-      <div class="footer-sub">Ford School of Public Policy &middot; Class of 2028</div>
-    </div>
-    <div class="footer-right">
-      <div class="footer-icons">
-        <a class="icon-btn" href="mailto:mburu@umich.edu" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg></a>
-        <a class="icon-btn" href="tel:+12483129650" aria-label="Phone"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg></a>
-        <a class="icon-btn" href="https://linkedin.com/in/mburu-karimi" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.4 18H6V9.6h2.4Zm-1.2-9.6a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8ZM18 18h-2.4v-4.2c0-1-.4-1.7-1.3-1.7a1.4 1.4 0 0 0-1.3 1 1.8 1.8 0 0 0-.1.6V18h-2.4V9.6h2.4v1.1a2.5 2.5 0 0 1 2.2-1.2c1.6 0 2.9 1 2.9 3.3Z"/></svg></a>
-        <a class="icon-btn" href="https://github.com/mburukarimi" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></a>
-      </div>
-      <div class="footer-copy">&copy; 2026 Mburu Karimi</div>
-    </div>
-  </div>
-</footer>
-
-<script src="site.js"></script>
+<footer class="site-foot">Mburu Karimi · Metro Detroit → Ann Arbor · mburu@umich.edu · (248) 312-9650</footer>
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+  const t=document.getElementById('navToggle'), m=document.getElementById('navMenu');
+  if(t){ t.addEventListener('click',()=>m.classList.toggle('open')); }
+  // expandable cards
+  document.querySelectorAll('.xcard-head').forEach(h=>{
+    h.addEventListener('click',()=>h.parentElement.classList.toggle('open'));
+  });
+  // reveal
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
